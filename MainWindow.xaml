@@ -12,15 +12,20 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+
         <DockPanel Grid.ColumnSpan="2" Margin="26,0,0,-0.2">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
-                    <MenuItem Header="_Run Report"/>
                     <MenuItem Header="_Exit"/>
+                </MenuItem>
+                <MenuItem Header="_Reports">
+                    <MenuItem Header="_CSOC Upcoming WASA"/>
+                    <MenuItem Header="_FSC WASA's Completed this year"/>
                 </MenuItem>
             </Menu>
             <StackPanel Margin="0,0.4,0,-0.4" Width="1218"></StackPanel>
         </DockPanel>
+
         <TextBox HorizontalAlignment="Left" Height="20" Margin="167,64,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="197" Grid.ColumnSpan="2"/>
         <Label Content="Application Name:&#xD;&#xA;" HorizontalAlignment="Left" Margin="53,60,0,0" VerticalAlignment="Top" Height="24" Width="109" Grid.ColumnSpan="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="88" Margin="37,34,0,0" VerticalAlignment="Top" Width="350" Grid.ColumnSpan="2"/>
@@ -63,6 +68,8 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="296" Margin="392,34,0,0" VerticalAlignment="Top" Width="856" Grid.ColumnSpan="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="311" Margin="392,335,0,0" VerticalAlignment="Top" Width="856" Grid.ColumnSpan="2"/>
         <ProgressBar HorizontalAlignment="Left" Height="17" Margin="37,651,0,0" VerticalAlignment="Top" Width="1211" Grid.ColumnSpan="2"/>
+        <Label Grid.ColumnSpan="2" Content="Reports" HorizontalAlignment="Left" Margin="405,347,0,0" VerticalAlignment="Top"/>
+        <ListBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="259" Margin="405,375,0,0" VerticalAlignment="Top" Width="825"/>
 
     </Grid>
 </Window>
